@@ -1,326 +1,479 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Landing Page</title>
-        <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-        <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    
-        <style>
+  <head>
+    <title>Landing Page</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
 
-            .carousel-image {
-                width: 100%;
-                height: 500px;
-                background-image: url('./KyrgyzstanSummer.jpg');
-                background-position: center;
-                background-size: cover;
-            }
-        
-            .carousel1 {
-                background-image: url('./KyrgyzstanSummer.jpg');
-            }
+    <style>
+      .carousel-image {
+        width: 100%;
+        height: 500px;
+        background-image: url("./KyrgyzstanSummer.jpg");
+        background-position: center;
+        background-size: cover;
+      }
 
-            .carousel2 {
-                background-image: url('./Summer-Issyk-kul-Kyrgyzstan.jpg');
-            }
+      .carousel1 {
+        background-image: url("./KyrgyzstanSummer.jpg");
+      }
 
-            .carousel3 {
-                background-image: url('./SkiingKyrgyzstan.jpg');
-            }
+      .carousel2 {
+        background-image: url("./Summer-Issyk-kul-Kyrgyzstan.jpg");
+      }
 
-            .card {
-              position:relative;
-              display: flex;
-              justify-content: space-around;
+      .carousel3 {
+        background-image: url("./SkiingKyrgyzstan.jpg");
+      }
 
-              flex-direction:column;
-              min-width: 0;
-              word-wrap: break-word;
-              background-color: #fff;
-              background-clip: border-box;
-              border: 1px solid rgba(0,0,0,.125);
-              border-radius: .25rem;
+      .card {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
 
-              margin:30px;
-            }
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-radius: 0.25rem;
 
-        </style>
-
-    </head>
-    <body>
-
-        <!-- This is the NavBar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                  <img src="./bootstrap-logo.svg" width="24"/>
+        margin: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- This is the NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./bootstrap-logo.svg" width="24" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
               </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider" /></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-        </nav>
-
-        <!-- This is the Carousel -->
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="carousel-image carousel1"></div>
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Welcome to Kyrgyzstan</h5>
-                  <p>Land Of Celestial Mountains</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="carousel-image carousel2"></div>
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Pearl of Kyrgyzstan</h5>
-                  <p>Spread out over 6000 square kilometres, Issyk Kul is the world’s second-largest saline lake after the Caspian Sea</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="carousel-image carousel3"></div>
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>The best ski resorts in Central Asia</h5>
-                  <p>The highest ski resorts for skiing in Kyrgyzstan extend up to an altitude of 3,450 metres </p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+          </form>
         </div>
-         
+      </div>
+    </nav>
 
-        <!-- Cards Section -->
-        <div class="container my-5">
-          <div class="row">
-              <div class="col-md col-lg-4 mb-3">
-                <div class="card m-auto">
-                    <img src="./HikingKyrgyzstan.jpg" class="card-img-top" alt="..."/>
-                    <div class="card-body">
-                        <h5 class="card-title">Land Of Celestial Mountains</h5>
-                        <p class="card-text">It’s impossible to imagine the history and culture of the Kyrgyz without Tien Shan and Pamir mountain ranges. Visit Kyrgyzstan, the land of celestial mountains, to get to know about the true nomadic lifestyle and unveil the real spirit of freedom and happiness.</p>
-                        <a href="http://www.discoverkyrgyzstan.org/" class="btn btn-primary">Discoverkyrgystan.org</a>
-                    </div>
-                </div>
-              </div>
-
-              <div class="col-md col-lg-4 mb-3">
-                <div class="card m-auto">
-                    <img src="./Summer-Issyk-kul-Kyrgyzstan.jpg" class="card-img-top" alt="..."/>
-                    <div class="card-body">
-                        <h5 class="card-title">14 Awesome Things to Do in Issyk Kul (2021 Guide)</h5>
-                        <p class="card-text">From eagle hunting to sunset cruises on the lake, here are 14 of the best, most unique things to do in Issyk Kul, Kyrgyzstan.</p>
-                        <a href="https://www.nomadasaurus.com/things-to-do-in-issyk-kul-kyrgyzstan/" class="btn btn-primary">Nomadasaurus.com</a>
-                    </div>
-                </div>
-              </div>
-
-              <div class="col-md col-lg-4 mb-3">
-                <div class="card m-auto">
-                    <img src="./SkiingKyrgyzstan.jpg" class="card-img-top" alt="..."/>
-                    <div class="card-body">
-                        <h5 class="card-title">22 ski resorts in Kyrgyzstan</h5>
-                        <p class="card-text">In Kyrgyzstan, you can look forward to 93 kilometres of slopes: the ski resorts are served by 31 ski lifts. Have lots of fun skiing in Kyrgyzstan!</p>
-                        <a href="https://www.skiresort.info/ski-resorts/kyrgyzstan/" class="btn btn-primary">Skiresort.info</a>
-                    </div>
-                </div>
-              </div>
-
-              <div class="col-md col-lg-4 mb-3">
-                <div class="card m-auto">
-                    <img src=" " class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-              </div>
-
-              <div class="col-md col-lg-4 mb-3">
-                <div class="card m-auto">
-                    <img src="./zayed-mosque.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-              </div>
-
-              <div class="col-md col-lg-4 mb-3">
-                <div class="card m-auto">
-                    <img src="./zayed-mosque.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-              </div>
+    <!-- This is the Carousel -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-image carousel1"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Welcome to Kyrgyzstan</h5>
+            <p>Land Of Celestial Mountains</p>
           </div>
         </div>
-
-
-        <!-- Media Section 1-->
-        <div class="container">
-          <hr />
+        <div class="carousel-item">
+          <div class="carousel-image carousel2"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Pearl of Kyrgyzstan</h5>
+            <p>
+              Spread out over 6000 square kilometres, Issyk Kul is the world’s
+              second-largest saline lake after the Caspian Sea
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-image carousel3"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>The best ski resorts in Central Asia</h5>
+            <p>
+              The highest ski resorts for skiing in Kyrgyzstan extend up to an
+              altitude of 3,450 metres
+            </p>
+          </div>
+        </div>
       </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
-      <div class="container d-flex justify-content-between align-items-center flex-wrap my-5">
-          <div style="max-width: 800px">
-              <h1>HORSEBACK TOURS.</h1>
-              <p>Horseback tours in Kyrgyzstan are as popular as trekking and hiking. Trails go through the virgin landscapes of Tien Shan and Pamir with pristine mountain lakes, beautiful spruce-fir forests and alpine meadows. One can taste kymyz, local kyrgyz beverage made of mare's milk, learn about the local culture and spend unforgettable night in bozui. The best season for this kind of vacation is from mid-June to September.
+    <!-- Cards Section -->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md col-lg-4 mb-3">
+          <div class="card m-auto">
+            <img src="./HikingKyrgyzstan.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Land Of Celestial Mountains</h5>
+              <p class="card-text">
+                It’s impossible to imagine the history and culture of the Kyrgyz
+                without Tien Shan and Pamir mountain ranges. Visit Kyrgyzstan,
+                the land of celestial mountains, to get to know about the true
+                nomadic lifestyle and unveil the real spirit of freedom and
+                happiness.
               </p>
-          </div>
-
-          <div style="background-image: url('./horsebackriding2.jpg'); background-position: center center; height: 550px; width: 700px;"></div>
-        </div>
-
-
-        <!-- Media Section 2-->
-        <div class="container">
-            <hr />
-        </div>
-
-        <div class="container d-flex justify-content-between align-items-center flex-wrap my-5 flex-row-reverse">
-            <div style="max-width: 800px">
-                <h1>HIKING & TREKKING.</h1>
-                <p>Kyrgyzstan is a true heaven for trekking and outdoor enthusiasts thanks to its beautiful mountain sceneries, large number of sunny days and huge choice of trails with varying degrees of difficulty from easy to extreme. 
-
-                  There are a large number of trails, many of which exist since Soviet times. The most favorite areas for hiking are: 
-                  
-                  - in north: Ala Archa, Alamedin, Issyk Ata, Chon Kemin, Altyn Arashan and Karakol gorges, Eki Naryn valley, the plateau of Son Kol lake, Talas range;
-                  
-                  - in south: Karavshin gorge, Chatkal valey and Arslanbob valleys, Sary Chelek lake, Aigul Tash mountain.
-                  
-                      
-                </p>
-            </div>
-
-            <div style="background-image: url('./hiking.jpg'); background-position: center center; height: 500px; width: 700px;"></div>
-        </div>
-
-        <!-- Media Section 3-->
-        <div class="container">
-          <hr />
-      </div>
-
-      <div class="container d-flex justify-content-between align-items-center flex-wrap my-5">
-          <div style="max-width: 800px">
-              <h1>WHITEWATER RAFTING AND KAYAKING</h1>
-              <p>Want to color your holiday in Kyrgyzstan with sharp and vivid impressions? Then you should definitely try white water rafting.
-
-                Of the Central Asian countries Kyrgyzstan has the best conditions for rafting and kayaking. The country has plenty of wild mountain rivers suitable for this kind of activity. There are routes of different categories of difficulty from elementary to the most difficult.
-                
-                Top rafting destinations are Chon Naryn, Kichi Naryn, Chatkal, Kekemeren, Suusamyr, Chon- Kemin, Chu, Sary Jaz and Kyzyl Suu rivers.
-              </p>
-          </div>
-
-          <div style="background-image: url('./Rafting.jpg'); background-position: center center; height: 600px; width: 800px;"></div>
-      </div>
-      
-        
-        <!-- Footer Section -->
-        <footer class="bg-dark text-white p-4">
-          <div class="container">
-            <div class="row">
-              <div class="col-6 col-md-3 mb-4">
-                <a class="navbar-brand text-white" href="#">
-                  <i class="bi bi-house-door-fill"></i>
-                  Visit Kyrgyzstan
-                </a><br/>
-                <small class="text-muted">&copy; 2021</small>
-              </div>
-              <div class="col-6 col-md-3 mb-4">
-                <h5>About Bishkek <i class="bi bi-info-circle"></i></h5>
-                <ul class="nav flex-column">
-                  <li class="nav-item">
-                    <a class="" href="#">International Airport Manas</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="" href="#">Supara</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="" href="#">Ala-Archa national park</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-6 col-md-3 mb-4">
-                <h5>Kyrgyz Republic <i class="bi bi-flag"></i></h5>
-                <ul class="nav flex-column">
-                  <li class="nav-item">
-                    <a class="" href="#">Bishkek</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="" href="#">Naryn</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="" href="#">Osh</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-6 col-md-3 mb-4">
-                <h5>Travelling to Kyrgyzstan <i class="bi bi-globe"></i></h5>
-                <ul class="nav flex-column">
-                  <li class="nav-item">
-                    <a class="" href="#">Flydubai Airline</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="" href="#">Travel Portal</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="" href="#">Visa Applications</a>
-                  </li>
-                </ul>
-
-              </div>
+              <a
+                href="http://www.discoverkyrgyzstan.org/"
+                class="btn btn-primary"
+                >Discoverkyrgystan.org</a
+              >
             </div>
           </div>
-        </footer>
+        </div>
 
-  
+        <div class="col-md col-lg-4 mb-3">
+          <div class="card m-auto">
+            <img
+              src="./Summer-Issyk-kul-Kyrgyzstan.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                14 Awesome Things to Do in Issyk Kul (2021 Guide)
+              </h5>
+              <p class="card-text">
+                From eagle hunting to sunset cruises on the lake, here are 14 of
+                the best, most unique things to do in Issyk Kul, Kyrgyzstan.
+              </p>
+              <a
+                href="https://www.nomadasaurus.com/things-to-do-in-issyk-kul-kyrgyzstan/"
+                class="btn btn-primary"
+                >Nomadasaurus.com</a
+              >
+            </div>
+          </div>
+        </div>
 
-    </body>
+        <div class="col-md col-lg-4 mb-3">
+          <div class="card m-auto">
+            <img src="./SkiingKyrgyzstan.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">22 ski resorts in Kyrgyzstan</h5>
+              <p class="card-text">
+                In Kyrgyzstan, you can look forward to 93 kilometres of slopes:
+                the ski resorts are served by 31 ski lifts. Have lots of fun
+                skiing in Kyrgyzstan!
+              </p>
+              <a
+                href="https://www.skiresort.info/ski-resorts/kyrgyzstan/"
+                class="btn btn-primary"
+                >Skiresort.info</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md col-lg-4 mb-3">
+          <div class="card m-auto">
+            <img
+              src="./road-to-song-kul-Kyrgyzstan.jpg "
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mountaineering</h5>
+              <p class="card-text">
+                About 95% of Kyrgyzstan’s territory is covered by mountains,
+                which belong to two major mountain systems of the world – Tien
+                Shan and Pamir mountain ranges. There are great opportunities
+                for both beginners and professional mountaineers and climbers.
+              </p>
+              <a
+                href="http://www.discoverkyrgyzstan.org/things-to-do"
+                class="btn btn-primary"
+                >Discoverkyrgystan.org</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md col-lg-4 mb-3">
+          <div class="card m-auto">
+            <img src="./zayed-mosque.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md col-lg-4 mb-3">
+          <div class="card m-auto">
+            <img src="./zayed-mosque.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Media Section 1-->
+    <div class="container">
+      <hr />
+    </div>
+
+    <div
+      class="container d-flex justify-content-between align-items-center flex-wrap my-5"
+    >
+      <div style="max-width: 800px">
+        <h1>HORSEBACK TOURS.</h1>
+        <p>
+          Horseback tours in Kyrgyzstan are as popular as trekking and hiking.
+          Trails go through the virgin landscapes of Tien Shan and Pamir with
+          pristine mountain lakes, beautiful spruce-fir forests and alpine
+          meadows. One can taste kymyz, local kyrgyz beverage made of mare's
+          milk, learn about the local culture and spend unforgettable night in
+          bozui. The best season for this kind of vacation is from mid-June to
+          September.
+        </p>
+      </div>
+
+      <div
+        style="
+          background-image: url('./horsebackriding2.jpg');
+          background-position: center center;
+          height: 550px;
+          width: 700px;
+        "
+      ></div>
+    </div>
+
+    <!-- Media Section 2-->
+    <div class="container">
+      <hr />
+    </div>
+
+    <div
+      class="container d-flex justify-content-between align-items-center flex-wrap my-5 flex-row-reverse"
+    >
+      <div style="max-width: 800px">
+        <h1>HIKING & TREKKING.</h1>
+        <p>
+          Kyrgyzstan is a true heaven for trekking and outdoor enthusiasts
+          thanks to its beautiful mountain sceneries, large number of sunny days
+          and huge choice of trails with varying degrees of difficulty from easy
+          to extreme. There are a large number of trails, many of which exist
+          since Soviet times. The most favorite areas for hiking are: - in
+          north: Ala Archa, Alamedin, Issyk Ata, Chon Kemin, Altyn Arashan and
+          Karakol gorges, Eki Naryn valley, the plateau of Son Kol lake, Talas
+          range; - in south: Karavshin gorge, Chatkal valey and Arslanbob
+          valleys, Sary Chelek lake, Aigul Tash mountain.
+        </p>
+      </div>
+
+      <div
+        style="
+          background-image: url('./hiking.jpg');
+          background-position: center center;
+          height: 500px;
+          width: 700px;
+        "
+      ></div>
+    </div>
+
+    <!-- Media Section 3-->
+    <div class="container">
+      <hr />
+    </div>
+
+    <div
+      class="container d-flex justify-content-between align-items-center flex-wrap my-5"
+    >
+      <div style="max-width: 800px">
+        <h1>WHITEWATER RAFTING AND KAYAKING</h1>
+        <p>
+          Want to color your holiday in Kyrgyzstan with sharp and vivid
+          impressions? Then you should definitely try white water rafting. Of
+          the Central Asian countries Kyrgyzstan has the best conditions for
+          rafting and kayaking. The country has plenty of wild mountain rivers
+          suitable for this kind of activity. There are routes of different
+          categories of difficulty from elementary to the most difficult. Top
+          rafting destinations are Chon Naryn, Kichi Naryn, Chatkal, Kekemeren,
+          Suusamyr, Chon- Kemin, Chu, Sary Jaz and Kyzyl Suu rivers.
+        </p>
+      </div>
+
+      <div
+        style="
+          background-image: url('./Rafting.jpg');
+          background-position: center center;
+          height: 600px;
+          width: 800px;
+        "
+      ></div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white p-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-3 mb-4">
+            <a class="navbar-brand text-white" href="#">
+              <i class="bi bi-house-door-fill"></i>
+              Visit Kyrgyzstan </a
+            ><br />
+            <small class="text-muted">&copy; 2021</small>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <h5>About Bishkek <i class="bi bi-info-circle"></i></h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="" href="#">International Airport Manas</a>
+              </li>
+              <li class="nav-item">
+                <a class="" href="#">Supara</a>
+              </li>
+              <li class="nav-item">
+                <a class="" href="#">Ala-Archa national park</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <h5>Kyrgyz Republic <i class="bi bi-flag"></i></h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="" href="#">Bishkek</a>
+              </li>
+              <li class="nav-item">
+                <a class="" href="#">Naryn</a>
+              </li>
+              <li class="nav-item">
+                <a class="" href="#">Osh</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <h5>Travelling to Kyrgyzstan <i class="bi bi-globe"></i></h5>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="" href="#">Flydubai Airline</a>
+              </li>
+              <li class="nav-item">
+                <a class="" href="#">Travel Portal</a>
+              </li>
+              <li class="nav-item">
+                <a class="" href="#">Visa Applications</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
